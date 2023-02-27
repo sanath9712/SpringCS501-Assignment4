@@ -9,4 +9,3 @@ data class Crime(
     val isSolved: Boolean,
     var requiresPolice: Boolean
 )
-

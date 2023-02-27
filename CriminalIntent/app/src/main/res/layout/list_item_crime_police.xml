@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crime Date"/>
-    <TextView
-        android:id="@+id/crime_police"
+    <Button
+        android:id="@+id/call_police_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Requires Police"/>
+        android:text="Call Police" />
 </LinearLayout>

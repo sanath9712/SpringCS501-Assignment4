@@ -31,24 +31,8 @@ class CrimeListFragment : Fragment() {
         _binding = FragmentCrimeListBinding.inflate(inflater, container, false)
         binding.crimeRecyclerView.layoutManager = LinearLayoutManager(context)
         val crimes = crimeListViewModel.crimes
-        Log.d("EWALLDDDDD BORSODI##################???", "${crimeListViewModel.crimes}")
-        val policecrimes = mutableListOf<Crime>()
-        val normalcrimes = mutableListOf<Crime>()
-        for (i in 0 until 100) {
-            if(!crimeListViewModel.crimes[i].requiresPolice){
-                policecrimes+=crimeListViewModel.crimes[i]
-            }else{
-                normalcrimes+=crimeListViewModel.crimes[i]
-            }
-        }
-
         val adapter = CrimeListAdapter(crimes)
-
         binding.crimeRecyclerView.adapter = adapter
-
-
-
-
         return binding.root
     }
     override fun onDestroyView() {

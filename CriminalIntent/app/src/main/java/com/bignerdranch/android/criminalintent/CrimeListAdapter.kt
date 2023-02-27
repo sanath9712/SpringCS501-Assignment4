@@ -67,12 +67,10 @@ class CrimeListAdapter(
             }
         }
 
-        //return CrimeHolder(binding)
+
     }
     override fun onBindViewHolder(holder: CrimeHolder, position: Int) {
         val crime = crimes[position]
-        Log.d("BIG D Energy","Hello")
-        Log.d("MOSTTTTTTTTTTT RANDDDDDDOOM EVER", "Requires Police: ${crimes[position].requiresPolice} and name : ${crimes[position].title}")
         holder.bind(crime)
 
 
@@ -85,26 +83,3 @@ class CrimeListAdapter(
     override fun getItemCount() = crimes.size
 }
 
-// class SeriousCrimeListAdapter(
-// private val crimes: List<Crime>
-// ) : RecyclerView.Adapter<SeriousCrimeHolder>() {
-// override fun onCreateViewHolder(
-// parent: ViewGroup,
-// viewType: Int
-// ) : SeriousCrimeHolder {
-// Log.d("THE VIEW TYPE ISSSSS","$viewType")
-// val inflater = LayoutInflater.from(parent.context)
-// val binding = ListItemCrimePoliceBinding.inflate(inflater, parent, false)
-// return SeriousCrimeHolder(binding)
-// }
-//
-// override fun onBindViewHolder(holder: SeriousCrimeHolder, position: Int) {
-// val crime = crimes[position]
-// Log.d("BIG D Energy","Hello")
-// Log.d("MOSTTTTTTTTTTT RANDDDDDDOOM EVER", "Requires Police: ${crimes[position].requiresPolice} and name : ${crimes[position].title}")
-// holder.bind(crime)
-//
-//
-// }
-// override fun getItemCount() = crimes.size
-// }

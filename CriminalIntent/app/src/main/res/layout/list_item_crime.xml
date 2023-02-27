@@ -14,9 +14,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crime Date"/>
+
     <TextView
         android:id="@+id/no_police"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Doesn't require Police Attention"/>
+        android:text="Doesn't require Police Attention"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 </LinearLayout>
